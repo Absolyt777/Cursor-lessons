@@ -4,8 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
 }
-
 button,
 input,
 select,
@@ -14,7 +21,7 @@ textarea {
     outline: none;
     background: transparent;
     cursor: pointer;
-}  
+}
 
 li {
     list-style: none;
@@ -24,30 +31,28 @@ li {
 .container {
     margin: 0 auto;
     max-width: 1117px;
-} 
-
-.list {
-    display: flex;
 }
-
-ul {
-    padding: 0 40px;
-}
- 
+   
 .header-blok {
     display: flex;
     justify-content: space-between;
     margin-top: 65px;
+}
+
+.list { 
+    display: flex; 
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 160%;
+    
 } 
 
-.list{
-    color: var(--2, #212353);
-font-family: Avenir;
-font-size: 16px;
-font-style: normal;
-font-weight: 800;
-line-height: 160%; /* 25.6px */
-} 
+ul.list1 {
+    padding: 0 40px;
+}
 
 button.header-btn {
     width: 210px;
@@ -57,10 +62,10 @@ button.header-btn {
 }
 
 .section1 {
-    padding: 130px 0 200px; 
+    padding: 130px 0 200px;
 }
 
-.section1_wraper{
+.section1_wraper {
     position: relative;
 }
 
@@ -155,10 +160,10 @@ p.section1-title {
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
-} 
+}
 
 .section_3_text {
-    width: 584px; 
+    width: 584px;
     padding-bottom: 150px;
     padding-left: 94px;
     color: var(--1, #4B5D68);
@@ -167,9 +172,137 @@ p.section1-title {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 160%; /* 28.8px */
-} 
+    line-height: 160%;
+    /* 28.8px */
+}
 
 .wrapper_blok {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section3_blok {
+    display: flex;
+    padding-bottom: 50px; 
+    position: relative;
+}
+
+.section_3_text_box {
+    margin-left: 35px;
+    max-width: 232px;
+    
+}
+
+.section_3_blok_text {
+    color: var(--1, #4B5D68);
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 20px;
+}
+
+.section_3_blok_title {
+    color: #212353;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+}
+
+.section_3btn {
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 160%; 
+    letter-spacing: 0.08px;
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    bottom: 30px;
+}
+
+
+.section4_wrapper {
+    border-radius: 50px;
+    background: var(--3, #9C69E2);
+    padding: 109px 76px 130px 93px; 
+    margin-top: 183px;
+}
+
+p.section4_title {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 52px */
+}
+
+.section4_inner {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 20px 0px 0px rgba(156, 105, 226, 0.30);
+    padding: 60px 130px 120px 102px;
+    display: flex;
+}
+
+.section4_content {
+    max-width: 515px;
+    padding-left: 44px;
+    padding-top: 20px
+}
+
+p.section4_name {
+    color: var(--2, #212353);
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: 0.09px;
+}
+
+.section4_link { 
+    display: inline-block;
+    color: var(--3, #9C69E2);
+    font-family: Avenir;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 22.4px */
+    letter-spacing: 0.14px;
+    margin-bottom: 18px;
+}
+
+.section4_text {
+    color: var(--1, #4B5D68);
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+} 
+.section4_arrows {
+    display: flex;
+    gap: 10px;
+}
+
+ul.section4_arrows {
+    display: flex; 
+    gap: 10px; 
+    margin-top: 50px;
+} 
+ 
+.section4_arrow:first-child {
+    margin-top: 5px;
+} 
+
+li.section4_arrow {
+    margin-left: 800px;
 }
